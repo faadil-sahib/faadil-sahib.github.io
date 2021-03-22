@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/faadil-space/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/faadil-space/static/js/main.ae4f15df.chunk.js",
+    "main.js.map": "/faadil-space/static/js/main.ae4f15df.chunk.js.map",
+    "runtime-main.js": "/faadil-space/static/js/runtime-main.1e2985e8.js",
+    "runtime-main.js.map": "/faadil-space/static/js/runtime-main.1e2985e8.js.map",
+    "static/js/2.a6d5dbdb.chunk.js": "/faadil-space/static/js/2.a6d5dbdb.chunk.js",
+    "static/js/2.a6d5dbdb.chunk.js.map": "/faadil-space/static/js/2.a6d5dbdb.chunk.js.map",
+    "static/js/3.a6952a3d.chunk.js": "/faadil-space/static/js/3.a6952a3d.chunk.js",
+    "static/js/3.a6952a3d.chunk.js.map": "/faadil-space/static/js/3.a6952a3d.chunk.js.map",
+    "index.html": "/faadil-space/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/faadil-space/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.a6d5dbdb.chunk.js.LICENSE.txt": "/faadil-space/static/js/2.a6d5dbdb.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/faadil-space/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e2985e8.js",
+    "static/js/2.a6d5dbdb.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.ae4f15df.chunk.js"
+  ]
+}
