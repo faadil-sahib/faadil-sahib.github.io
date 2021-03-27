@@ -1,11 +1,15 @@
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
 		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-		"Helvetica Neue", sans-serif;
+		"Helvetica Neue", sans-serif; */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: #04202f !important;
+}
+
+div {
+	font-family: "Exo", sans-serif;
 }
 
 code {
@@ -13,14 +17,27 @@ code {
 		monospace;
 }
 
-.page-center {
-	background-color: red;
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+
+@font-face {
+	font-family: "Exo";
+	src: local("Exo"), url(./fonts/Exo-Light.ttf) format("truetype");
 }
 
-.page-left {
-	background-color: green;
+@font-face {
+	font-family: "Exo";
+	src: local("Exo"), url(./fonts/Exo-Medium.ttf) format("truetype");
+	font-weight: bold;
 }
 
-.page-right {
-	background-color: blue;
+@font-face {
+	font-family: "Exo";
+	src: local("Exo"), url(./fonts/Exo-Bold.ttf) format("truetype");
+	font-weight: bolder;
+}
+
+@font-face {
+	font-family: "Exo";
+	src: local("Exo"), url(./fonts/Exo-Thin.ttf) format("truetype");
+	font-weight: lighter;
 }
