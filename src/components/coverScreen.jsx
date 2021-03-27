@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { debounce } from "../utilities/helpers";
 
-const HiddenNavbar = ({ isHome }) => {
+const CoverScreen = ({ isHome }) => {
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
 	const [visible, setVisible] = useState(true);
 
@@ -9,9 +9,9 @@ const HiddenNavbar = ({ isHome }) => {
 		const currentScrollPos = window.pageYOffset;
 
 		setVisible(
-			(prevScrollPos > currentScrollPos &&
-				prevScrollPos - currentScrollPos > 70) ||
-				currentScrollPos < 10
+			// (prevScrollPos > currentScrollPos &&
+			// 	prevScrollPos - currentScrollPos > 70) ||
+			currentScrollPos < 10
 		);
 
 		setPrevScrollPos(currentScrollPos);
@@ -26,7 +26,7 @@ const HiddenNavbar = ({ isHome }) => {
 	const navbarStyles = {
 		position: "fixed",
 		width: "100%",
-		backgroundColor: "grey",
+		backgroundColor: "#282d30",
 		textAlign: "center",
 		transition: "top 0.6s",
 	};
@@ -44,15 +44,14 @@ const HiddenNavbar = ({ isHome }) => {
 				<div className='home-intro-text'>
 					<span
 						style={{
-							fontSize: "5rem",
-							fontWeight: "bold",
-							color: "aquamarine",
-							position: "absolute",
-							top: "50%",
-							left: "50%",
-							transform: "translate(-50%, -50%)",
+							fontSize: "4.2rem",
+							color: "white",
 						}}>
 						I am a software developer.
+						<br />
+						<p style={{ fontSize: "2.7rem" }}>
+							And this is my personal space.
+						</p>
 					</span>
 				</div>
 			</div>
@@ -70,4 +69,4 @@ const HiddenNavbar = ({ isHome }) => {
 		);
 };
 
-export default HiddenNavbar;
+export default CoverScreen;

@@ -11,9 +11,10 @@ export default class App extends Component {
 		return (
 			<React.Fragment>
 				<NavBar />
+				<div style={{ position: "sticky" }}>One of three columns</div>
 				<main
 					className='container-fluid p-0'
-					style={{ "overflow-x": "hidden" }}>
+					style={{ overflowX: "hidden" }}>
 					<BrowserRouter>
 						<Switch>
 							<Route exact path='/' component={Home} />

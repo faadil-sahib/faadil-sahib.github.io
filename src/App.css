@@ -1,21 +1,39 @@
 .center-area {
-	background-color: #2f3542;
 	color: #dfe4e1;
 	padding: 2em;
+	font-size: 1.4rem;
 }
 
 .left-area {
-	background-color: #2f3542;
-	color: 2fe4e1;
+	color: #dfe4e1;
 	padding: 2em;
+	font-size: 1.2rem;
 }
 
 .right-area {
-	background-color: #2f3542;
-	color: 2fe4e1;
+	color: #dfe4e1;
 	padding: 2em;
+	font-size: 0.94rem;
+	word-spacing: 0.5rem;
+	line-height: 1.4rem;
 }
 
 .home-intro-text {
+	font-size: "5rem";
+	position: absolute;
+	width: 80%;
+	height: 20%;
 	text-align: center;
+	justify-content: center;
+	align-items: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media (min-width: 992px) {
+	.navbar li {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
 }
