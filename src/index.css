@@ -5,11 +5,11 @@ body {
 		"Helvetica Neue", sans-serif; */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #282d30 !important; /* 2f3542 */
+	/* background-color: #282d30; 2f3542 */
 }
 
 div {
-	font-family: "Comfortaa", sans-serif;
+	font-family: "Comfortaa", cursive;
 }
 
 code {
@@ -17,8 +17,7 @@ code {
 		monospace;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Comfortaa");
-
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 @font-face {
 	font-family: "Exo";
 	src: local("Exo"), url(./fonts/Exo-Light.ttf) format("truetype");

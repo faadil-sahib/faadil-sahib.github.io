@@ -1,11 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { debounce } from "../utilities/helpers";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { fab, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const NavBar = ({ totalCounters }) => {
+const NavBar = () => {
+	const [prevScrollPos, setPrevScrollPos] = useState(0);
+	const [visible, setVisible] = useState(true);
+
+	const handleScroll = debounce(() => {
+		const currentScrollPos = window.pageYOffset;
+		console.log(visible);
+
+		setVisible(currentScrollPos < 10);
+
+		setPrevScrollPos(currentScrollPos);
+	}, 100);
+
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, [prevScrollPos, visible, handleScroll]);
+
 	return (
-		<nav className='navbar navbar-expand-lg navbar-dark fixed-top'>
+		<nav
+			className={`navbar navbar-expand-lg fixed-top ${
+				visible ? "navbar-dark" : "navbar-light"
+			}`}>
 			<a className='navbar-brand' href='/#'>
 				Faadil Sahib
 			</a>
@@ -37,24 +59,32 @@ const NavBar = ({ totalCounters }) => {
 						</a>
 					</li>
 				</ul>
-				<ul className='navbar-nav'>
+				<ul className='navbar-nav' style={{ marginLeft: "auto" }}>
 					<li className='nav-item'>
 						<a
 							href='https://github.com/faadil-sahib'
-							target='_blank'>
+							target='_blank'
+							rel='noreferrer'>
 							<FontAwesomeIcon
 								icon={faGithub}
-								style={{ fontSize: "1.5rem", color: "grey" }}
+								style={{
+									fontSize: "1.5rem",
+									color: "grey",
+								}}
 							/>
 						</a>
 					</li>
 					<li className='nav-item'>
 						<a
 							href='https://www.linkedin.com/in/faadil-garda-sahib-090a82112/'
-							target='_blank'>
+							target='_blank'
+							rel='noreferrer'>
 							<FontAwesomeIcon
 								icon={faLinkedin}
-								style={{ fontSize: "1.5rem", color: "grey" }}
+								style={{
+									fontSize: "1.5rem",
+									color: "grey",
+								}}
 							/>
 						</a>
 					</li>

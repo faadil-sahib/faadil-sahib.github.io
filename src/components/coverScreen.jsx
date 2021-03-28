@@ -40,6 +40,7 @@ const CoverScreen = ({ isHome }) => {
 					top: visible ? "0" : "-100%",
 					backgroundImage: "url(././images/vscbackgroundblurred.jpg)",
 					filter: "grayscale(100%)",
+					left: "0%",
 				}}>
 				<div className='home-intro-text'>
 					<span
