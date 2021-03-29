@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.025158fb.chunk.css",
-    "main.js": "/static/js/main.bfdd128f.chunk.js",
-    "main.js.map": "/static/js/main.bfdd128f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.664aa3bc.js",
-    "runtime-main.js.map": "/static/js/runtime-main.664aa3bc.js.map",
-    "static/css/2.f14e511e.chunk.css": "/static/css/2.f14e511e.chunk.css",
-    "static/js/2.5f762c92.chunk.js": "/static/js/2.5f762c92.chunk.js",
-    "static/js/2.5f762c92.chunk.js.map": "/static/js/2.5f762c92.chunk.js.map",
-    "static/js/3.fddfecf6.chunk.js": "/static/js/3.fddfecf6.chunk.js",
-    "static/js/3.fddfecf6.chunk.js.map": "/static/js/3.fddfecf6.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.f14e511e.chunk.css.map": "/static/css/2.f14e511e.chunk.css.map",
-    "static/css/main.025158fb.chunk.css.map": "/static/css/main.025158fb.chunk.css.map",
-    "static/js/2.5f762c92.chunk.js.LICENSE.txt": "/static/js/2.5f762c92.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/Exo-Thin.950b154d.ttf"
+    "main.css": "/faadil-sahib.github.io/static/css/main.ff9d12dd.chunk.css",
+    "main.js": "/faadil-sahib.github.io/static/js/main.bfdd128f.chunk.js",
+    "main.js.map": "/faadil-sahib.github.io/static/js/main.bfdd128f.chunk.js.map",
+    "runtime-main.js": "/faadil-sahib.github.io/static/js/runtime-main.53839f42.js",
+    "runtime-main.js.map": "/faadil-sahib.github.io/static/js/runtime-main.53839f42.js.map",
+    "static/css/2.f14e511e.chunk.css": "/faadil-sahib.github.io/static/css/2.f14e511e.chunk.css",
+    "static/js/2.5f762c92.chunk.js": "/faadil-sahib.github.io/static/js/2.5f762c92.chunk.js",
+    "static/js/2.5f762c92.chunk.js.map": "/faadil-sahib.github.io/static/js/2.5f762c92.chunk.js.map",
+    "static/js/3.fddfecf6.chunk.js": "/faadil-sahib.github.io/static/js/3.fddfecf6.chunk.js",
+    "static/js/3.fddfecf6.chunk.js.map": "/faadil-sahib.github.io/static/js/3.fddfecf6.chunk.js.map",
+    "index.html": "/faadil-sahib.github.io/index.html",
+    "static/css/2.f14e511e.chunk.css.map": "/faadil-sahib.github.io/static/css/2.f14e511e.chunk.css.map",
+    "static/css/main.ff9d12dd.chunk.css.map": "/faadil-sahib.github.io/static/css/main.ff9d12dd.chunk.css.map",
+    "static/js/2.5f762c92.chunk.js.LICENSE.txt": "/faadil-sahib.github.io/static/js/2.5f762c92.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/faadil-sahib.github.io/static/media/Exo-Thin.950b154d.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.664aa3bc.js",
+    "static/js/runtime-main.53839f42.js",
     "static/css/2.f14e511e.chunk.css",
     "static/js/2.5f762c92.chunk.js",
-    "static/css/main.025158fb.chunk.css",
+    "static/css/main.ff9d12dd.chunk.css",
     "static/js/main.bfdd128f.chunk.js"
   ]
 }
