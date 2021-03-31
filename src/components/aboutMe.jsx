@@ -7,7 +7,12 @@ class AboutMe extends Component {
 		return (
 			<React.Fragment>
 				<div style={{ paddingTop: 200 }}>
-					<CoverScreen></CoverScreen>
+					<CoverScreen
+						isHome={false}
+						mainLine={"I am a software developer."}
+						subLine={
+							"And this is my personal space."
+						}></CoverScreen>
 					<div className='row align-items-start'>
 						<div className='col-sm left-area order-md-1 order-2'>
 							One of three columns

@@ -10,7 +10,6 @@ const NavBar = () => {
 
 	const handleScroll = debounce(() => {
 		const currentScrollPos = window.pageYOffset;
-		console.log(visible);
 
 		setVisible(currentScrollPos < 10);
 
@@ -28,7 +27,10 @@ const NavBar = () => {
 			className={`navbar navbar-expand-lg fixed-top ${
 				visible ? "navbar-dark" : "navbar-light"
 			}`}>
-			<a className='navbar-brand' href='/#'>
+			<a
+				className='navbar-brand'
+				href='/#'
+				style={{ marginLeft: "1rem" }}>
 				Faadil Sahib
 			</a>
 			<button
@@ -59,7 +61,9 @@ const NavBar = () => {
 						</a>
 					</li>
 				</ul>
-				<ul className='navbar-nav' style={{ marginLeft: "auto" }}>
+				<ul
+					className='navbar-nav'
+					style={{ marginLeft: "auto", marginRight: "1rem" }}>
 					<li className='nav-item'>
 						<a
 							href='https://github.com/faadil-sahib'

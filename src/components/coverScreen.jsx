@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { debounce } from "../utilities/helpers";
 
-const CoverScreen = ({ isHome }) => {
+const CoverScreen = ({ isHome, mainLine, subLine }) => {
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
 	const [visible, setVisible] = useState(true);
 
@@ -38,7 +38,7 @@ const CoverScreen = ({ isHome }) => {
 					...navbarStyles,
 					height: "100%",
 					top: visible ? "0" : "-100%",
-					backgroundImage: "url(././images/vscbackgroundblurred.jpg)",
+					backgroundImage: `url(${process.env.PUBLIC_URL}/images/vscbackgroundblurred.jpg)`,
 					filter: "grayscale(100%)",
 					left: "0%",
 				}}>
@@ -48,11 +48,9 @@ const CoverScreen = ({ isHome }) => {
 							fontSize: "4.2rem",
 							color: "white",
 						}}>
-						I am a software developer.
+						{mainLine}
 						<br />
-						<p style={{ fontSize: "2.7rem" }}>
-							And this is my personal space.
-						</p>
+						<p style={{ fontSize: "2.7rem" }}>{subLine}</p>
 					</span>
 				</div>
 			</div>
@@ -64,8 +62,23 @@ const CoverScreen = ({ isHome }) => {
 					...navbarStyles,
 					height: "200px",
 					top: visible ? "0" : "-200px",
+					backgroundImage: `url(${process.env.PUBLIC_URL}/images/vscbackgroundblurred.jpg)`, // TODO: change image here
+					filter: "grayscale(100%)",
+					left: "0%",
 				}}>
-				Some Company Inc.
+				<div className='home-intro-text'>
+					<span
+						style={{
+							fontSize: "2.1rem",
+							color: "#EFEFEF",
+						}}>
+						{mainLine}
+						<br />
+						<p style={{ fontSize: "1.2rem", color: "#A5A5A5" }}>
+							{subLine}
+						</p>
+					</span>
+				</div>
 			</div>
 		);
 };
