@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import NavBar from "./components/navbar";
 import Home from "./components/home";
 import Blog from "./components/blog";
@@ -10,7 +10,7 @@ export default class App extends Component {
 		blogs: [
 			{
 				id: 1,
-				title: "CQRS with MediatR pattern",
+				title: ".NET Core Clean Architecture pattern",
 				description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id interdum velit laoreet id. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Iaculis at erat pellentesque adipiscing. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Facilisi nullam vehicula ipsum a arcu cursus vitae. Augue eget arcu dictum varius. At urna condimentum mattis pellentesque id. Dui nunc mattis enim ut tellus elementum sagittis vitae et. Egestas integer eget aliquet nibh praesent. In iaculis nunc sed augue lacus viverra vitae. A condimentum vitae sapien pellentesque. Diam in arcu cursus euismod quis viverra nibh cras. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Vulputate eu scelerisque felis imperdiet proin.
 
 					Massa sapien faucibus et molestie. Laoreet suspendisse interdum consectetur libero. Eget aliquet nibh praesent tristique magna. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc. Faucibus scelerisque eleifend donec pretium vulputate sapien nec. Vitae elementum curabitur vitae nunc. Mauris pharetra et ultrices neque ornare aenean euismod. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed. Convallis aenean et tortor at. Pretium aenean pharetra magna ac placerat. Tellus integer feugiat scelerisque varius morbi enim. Bibendum arcu vitae elementum curabitur vitae. Eget felis eget nunc lobortis mattis aliquam faucibus. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Odio tempor orci dapibus ultrices in.
@@ -63,20 +63,18 @@ export default class App extends Component {
 				<main
 					className='container-fluid p-0' // p-0
 					style={{ overflowX: "hidden" }}>
-					<BrowserRouter>
+					<div>
 						<Switch>
 							<Route
-								exact
-								path='/'
+								path='/blog/:blogid'
 								render={(props) => (
-									<Home
+									<Blog
 										{...props}
 										blogItems={this.state.blogs}
 									/>
 								)}
 							/>
 							<Route
-								exact
 								path='/blog'
 								render={(props) => (
 									<Blog
@@ -89,18 +87,18 @@ export default class App extends Component {
 									/>
 								)}
 							/>
+							<Route path='/aboutme' component={AboutMe} />
 							<Route
-								path='/blog/:blogid'
+								path='/'
 								render={(props) => (
-									<Blog
+									<Home
 										{...props}
 										blogItems={this.state.blogs}
 									/>
 								)}
 							/>
-							<Route path='/aboutme' component={AboutMe} />
 						</Switch>
-					</BrowserRouter>
+					</div>
 				</main>
 			</React.Fragment>
 		);

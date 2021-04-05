@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CoverScreen from "./coverScreen";
 import BlogList from "./blogList";
+import Subscription from "./subscription";
 
 class Home extends Component {
 	render() {
@@ -82,9 +83,9 @@ class Home extends Component {
 							<br />
 							You may also come across a semblance of a bio/resume
 							of mine if you press the right buttons. I do hope
-							that it will be of a certain interest to you. I do
-							love to share the things I've learnt and done and
-							experienced.
+							that it will be of a certain interest to you. I
+							truly enjoy sharing the things I've learnt and done
+							and experienced.
 							<br />
 							<br />
 							<br />
@@ -93,34 +94,7 @@ class Home extends Component {
 					<div
 						className='col-sm right-area order-md-3 order-3'
 						style={{ fontWeight: "bold" }}>
-						<label>
-							If you would like to receive email notifications
-							about new stuff, kindly do share your email address
-							below.
-							<br />
-							<p style={{ color: "#8E3030" }}>
-								[WIP//Not yet functional]
-							</p>
-						</label>
-						<br />
-						<br />
-						<div className='d-flex align-items-end'>
-							<input
-								type='email'
-								className='form-control'
-								aria-describedby='emailHelp'
-								placeholder='Your email'
-							/>
-							<button type='submit' className='btn btn-primary'>
-								Submit
-							</button>
-						</div>
-						<br />
-						<small id='emailHelp' className='form-text text-muted'>
-							It will be kept strictly confidential and only used
-							for the mentioned purpose, no sharing with annoying
-							advertisers or anything of the like!
-						</small>
+						<Subscription></Subscription>
 					</div>
 				</div>
 				<CoverScreen

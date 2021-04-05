@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BlogList = ({ blogItems }) => {
 	return blogItems.map((blogItem) => (
-		<a
-			href={"/blog/" + blogItem.id}
+		<Link
+			to={"/blog/" + blogItem.id}
 			style={{ textDecoration: "none" }}
 			key={blogItem.id}>
 			<div
@@ -40,7 +41,7 @@ const BlogList = ({ blogItems }) => {
 					</p>
 				</div>
 			</div>
-		</a>
+		</Link>
 	));
 };
 

@@ -3,6 +3,7 @@ import { debounce } from "../utilities/helpers";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { fab, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { Router, Link } from "react-router-dom";
 
 const NavBar = () => {
 	const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -46,19 +47,21 @@ const NavBar = () => {
 			<div className='collapse navbar-collapse' id='navbarText'>
 				<ul className='navbar-nav mr-auto'>
 					<li className='nav-item active'>
-						<a className='nav-link' href='/#'>
+						<Link className='nav-link' to='/#'>
 							Home <span className='sr-only'>(current)</span>
-						</a>
+						</Link>
 					</li>
+
 					<li className='nav-item'>
-						<a className='nav-link' href='/blog'>
+						<Link className='nav-link' to='/blog'>
 							Blog
-						</a>
+						</Link>
 					</li>
+
 					<li className='nav-item'>
-						<a className='nav-link' href='/aboutme'>
+						<Link className='nav-link' to='/aboutme'>
 							Me
-						</a>
+						</Link>
 					</li>
 				</ul>
 				<ul

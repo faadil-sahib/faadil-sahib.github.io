@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import CoverScreen from "./coverScreen";
 import BlogList from "./blogList";
-import { withRouter } from "react-router-dom";
+import Subscription from "./subscription";
+import { withRouter, Link } from "react-router-dom";
 
 class Blog extends Component {
 	state = {
@@ -84,8 +85,8 @@ class Blog extends Component {
 			);
 		} else {
 			return this.state.blogItems.map((blogItem) => (
-				<a
-					href={"/blog/" + blogItem.id}
+				<Link
+					to={"/blog/" + blogItem.id}
 					style={{ textDecoration: "none" }}
 					key={blogItem.id}>
 					<div
@@ -122,7 +123,7 @@ class Blog extends Component {
 							</p>
 						</div>
 					</div>
-				</a>
+				</Link>
 			));
 		}
 	}
@@ -138,41 +139,14 @@ class Blog extends Component {
 						<BlogList blogItems={blogItems}></BlogList>
 					</div>
 					<div
-						className='col-5 center-area order-md-2 order-1'
+						className='col-sm-5 center-area order-md-2 order-1'
 						style={{ textAlign: "justify" }}>
 						{this.getBlogBody()}
 					</div>
 					<div
 						className='col-sm right-area order-md-3 order-3'
 						style={{ fontWeight: "bold" }}>
-						<label>
-							If you would like to receive email notifications
-							about new stuff, kindly do share your email address
-							below.
-							<br />
-							<p style={{ color: "#8E3030" }}>
-								[WIP//Not yet functional]
-							</p>
-						</label>
-						<br />
-						<br />
-						<div className='d-flex align-items-end'>
-							<input
-								type='email'
-								className='form-control'
-								aria-describedby='emailHelp'
-								placeholder='Your email'
-							/>
-							<button type='submit' className='btn btn-primary'>
-								Submit
-							</button>
-						</div>
-						<br />
-						<small id='emailHelp' className='form-text text-muted'>
-							It will be kept strictly confidential and only used
-							for the mentioned purpose, no sharing with annoying
-							advertisers or anything of the like!
-						</small>
+						<Subscription></Subscription>
 					</div>
 				</div>
 				{this.getCoverScreen()}
